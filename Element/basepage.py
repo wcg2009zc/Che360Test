@@ -4,18 +4,22 @@
 # 创建时间 ：2019/5/8 0008   17:42
 # 文件     ：basepage.py
 # IDE      : PyCharm
+
 import unittest
-from selenium import webdriver
-from Util.singleton import singleton
+# from selenium import webdriver
+# from Util.singleton import singleton
+# from selenium.webdriver import ActionChains
+# from selenium.common import exceptions
 from selenium.webdriver.support.select import Select
-from selenium.webdriver import ActionChains
-from selenium.common import exceptions
 import selenium.webdriver.support.ui as ui
 from Util.Driver import DriverHandle
 from selenium.webdriver.common.action_chains import *
 from selenium.webdriver.support.wait import WebDriverWait
 
-class Basic:
+
+
+
+class Basic: #将定位方法封装为Basic
     def __init__(self):
 
         self.driver = DriverHandle().driver
@@ -614,9 +618,9 @@ class Basic:
             a = self.driver.find_element_by_id(id)
             return a
         except:
-            print('没有找到%s这个元素' % (id))            #####################
-
-class Assertions(unittest.TestCase):
+            print('没有找到%s这个元素' % (id))
+    ################################区分上下分割####################################################
+class Assertions(unittest.TestCase):    #将验证方法封装为Assertions
 # 验证（输入预期结果，输入xpath（预期结果完全等于实际结果））
     def assertEqual_id(self, 预期结果, 实际结果):
         Expected_result = 预期结果
