@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Che360Test.iml" filepath="$PROJECT_DIR$/.idea/Che360Test.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/autotest/.idea/NcmeAutomation.iml" filepath="$USER_HOME$/Desktop/autotest/.idea/NcmeAutomation.iml" />
     </modules>
   </component>
 </project>
